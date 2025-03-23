@@ -56,27 +56,27 @@ export default function Hero() {
   ];
 
   const [code] = useState(`
-const profile = {
-    name: 'Damilola Onadeinde',
-    title: 'DevOps Engineer | Cloud Specialist | Infrastructure Architect',
-    skills: [
-        'Kubernetes', 'Docker', 'Terraform', 'AWS',
-        'GCP', 'CI/CD Pipelines', 'Infrastructure as Code',
-        'Cloud Architecture', 'Automation', 'Monitoring'
-    ],
-    hardWorker: true,
-    quickLearner: true,
-    problemSolver: true,
-    yearsOfExperience: 9,
-    hireable: function() {
-        return (
-            this.hardWorker &&
-            this.problemSolver &&
-            this.skills.length >= 5 &&
-            this.yearsOfExperience >= 3
-        );
-    }
-};
+profile:
+  name: Damilola Onadeinde
+  title: DevOps Engineer | Cloud Specialist | Infrastructure Architect
+  skills:
+    - Kubernetes
+    - Docker
+    - Terraform
+    - AWS
+    - GCP
+    - CI/CD Pipelines
+    - Infrastructure as Code
+    - Cloud Architecture
+    - Automation
+    - Monitoring
+  attributes:
+    hardWorker: true
+    quickLearner: true
+    problemSolver: true
+  experience:
+    years: 9
+    hireable: true
   `);
 
   useEffect(() => {
@@ -206,7 +206,7 @@ const profile = {
                     <div className="window-dot bg-green-500"></div>
                     <span className="ml-2 text-sm text-gray-400 flex items-center gap-2">
                       <i className="fas fa-code"></i>
-                      developer.js
+                      developer.yml
                     </span>
                   </div>
                   <pre className="language-javascript">
