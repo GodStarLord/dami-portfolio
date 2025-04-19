@@ -7,6 +7,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
 import { Route, Routes } from "react-router-dom";
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
           <Skills />
           <Experience />
           <Education />
+          <Certifications />
           <Contact />
         </>
       ) : (
@@ -32,6 +34,7 @@ export default function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/certifications" element={<Certifications />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
